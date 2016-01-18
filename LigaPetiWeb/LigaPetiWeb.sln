@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LigaPetiWeb", "LigaPetiWeb\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LigaPetiWeb.Tests", "LigaPetiWeb.Tests\LigaPetiWeb.Tests.csproj", "{B9B0856E-5166-4026-AAF2-11C3E1D58A65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LigaPetiDbModel", "LigaPetiDbModel\LigaPetiDbModel.csproj", "{1FE44D98-00CC-4E0F-B648-E9F4EFC6B54F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B9B0856E-5166-4026-AAF2-11C3E1D58A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9B0856E-5166-4026-AAF2-11C3E1D58A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9B0856E-5166-4026-AAF2-11C3E1D58A65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FE44D98-00CC-4E0F-B648-E9F4EFC6B54F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FE44D98-00CC-4E0F-B648-E9F4EFC6B54F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FE44D98-00CC-4E0F-B648-E9F4EFC6B54F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FE44D98-00CC-4E0F-B648-E9F4EFC6B54F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
