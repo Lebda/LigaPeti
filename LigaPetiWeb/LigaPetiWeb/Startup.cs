@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(LigaPetiWeb.Startup))]
-namespace LigaPetiWeb
+[assembly: OwinStartupAttribute(typeof(LigaPetiWeb.App_Start.Startup))]
+namespace LigaPetiWeb.App_Start
 {
     public partial class Startup
     {

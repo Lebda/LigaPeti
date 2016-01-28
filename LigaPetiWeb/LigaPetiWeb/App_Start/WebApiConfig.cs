@@ -1,14 +1,16 @@
-﻿using System;
+﻿using LigaPetiWeb.Infrastructure.IoC;
+using System;
 using System.Linq;
 using System.Web.Http;
 
-namespace LigaPetiWeb
+namespace LigaPetiWeb.App_Start
 {
     public static class WebApiConfig
     {
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+            config.DependencyResolver = new NinjectResolver();
 
             // Web API routes
             config.MapHttpAttributeRoutes();
@@ -16,8 +18,9 @@ namespace LigaPetiWeb
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-            );
+                defaults: new { id = RouteParameter.Optional });
+
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
         }
     }
 }

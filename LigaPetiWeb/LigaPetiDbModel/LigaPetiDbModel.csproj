@@ -76,6 +76,10 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LebsoftCommonLibs\LebsoftCommon\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -84,11 +88,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContext\Identity\IdentityDb.cs" />
+    <Compile Include="DataContext\LigaPeti\LigaPetiDb.cs" />
     <Compile Include="Entities\Identity\ApplicationUser.cs" />
+    <Compile Include="Entities\LigaPeti\DbMatch.cs" />
+    <Compile Include="Entities\LigaPeti\DbPlayer.cs" />
+    <Compile Include="Entities\LigaPeti\DbPlayerScore4Match.cs" />
+    <Compile Include="Entities\LigaPeti\DbPlayerTeamConcract.cs" />
+    <Compile Include="Entities\LigaPeti\DbSeason.cs" />
+    <Compile Include="Entities\LigaPeti\DbTeam.cs" />
+    <Compile Include="Entities\LigaPeti\DbTournament.cs" />
     <Compile Include="IdentityConfig\ApplicationSignInManager.cs" />
     <Compile Include="IdentityConfig\ApplicationUserManager.cs" />
     <Compile Include="IdentityConfig\EmailService.cs" />
     <Compile Include="IdentityConfig\SmsService.cs" />
+    <Compile Include="Initializers\LigaPetiDbInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

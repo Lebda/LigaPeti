@@ -9,6 +9,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LigaPetiWeb.Tests", "LigaPe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LigaPetiDbModel", "LigaPetiDbModel\LigaPetiDbModel.csproj", "{1FE44D98-00CC-4E0F-B648-E9F4EFC6B54F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{E30D306E-B617-4E73-A20E-EF38269432BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{BAACBE63-E619-47F6-9466-DBB3BC460BF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{4DDD5094-B807-41CD-9EE9-10A05B8D5E4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreasHelp", "..\..\LebsoftCommonLibs\LebsoftCommon\AreasHelp\AreasHelp.csproj", "{E02F6E1C-8EF4-4CFF-B7E7-F1C35FAA1A27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IocHelp", "..\..\LebsoftCommonLibs\LebsoftCommon\IocHelp\IocHelp.csproj", "{5A06566A-56BF-4EA5-B870-C880BDAC1A38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LigaPetiClient", "LigaPetiClient\LigaPetiClient.csproj", "{45CC800B-DE2E-4B76-834E-797FE7F4356C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +39,26 @@ Global
 		{1FE44D98-00CC-4E0F-B648-E9F4EFC6B54F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FE44D98-00CC-4E0F-B648-E9F4EFC6B54F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FE44D98-00CC-4E0F-B648-E9F4EFC6B54F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E02F6E1C-8EF4-4CFF-B7E7-F1C35FAA1A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E02F6E1C-8EF4-4CFF-B7E7-F1C35FAA1A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E02F6E1C-8EF4-4CFF-B7E7-F1C35FAA1A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E02F6E1C-8EF4-4CFF-B7E7-F1C35FAA1A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A06566A-56BF-4EA5-B870-C880BDAC1A38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A06566A-56BF-4EA5-B870-C880BDAC1A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A06566A-56BF-4EA5-B870-C880BDAC1A38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A06566A-56BF-4EA5-B870-C880BDAC1A38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45CC800B-DE2E-4B76-834E-797FE7F4356C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45CC800B-DE2E-4B76-834E-797FE7F4356C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45CC800B-DE2E-4B76-834E-797FE7F4356C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45CC800B-DE2E-4B76-834E-797FE7F4356C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B9B0856E-5166-4026-AAF2-11C3E1D58A65} = {4DDD5094-B807-41CD-9EE9-10A05B8D5E4C}
+		{E02F6E1C-8EF4-4CFF-B7E7-F1C35FAA1A27} = {BAACBE63-E619-47F6-9466-DBB3BC460BF4}
+		{5A06566A-56BF-4EA5-B870-C880BDAC1A38} = {BAACBE63-E619-47F6-9466-DBB3BC460BF4}
+		{45CC800B-DE2E-4B76-834E-797FE7F4356C} = {E30D306E-B617-4E73-A20E-EF38269432BA}
 	EndGlobalSection
 EndGlobal

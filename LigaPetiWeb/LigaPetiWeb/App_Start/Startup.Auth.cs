@@ -8,7 +8,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
 
-namespace LigaPetiWeb
+namespace LigaPetiWeb.App_Start
 {
     public partial class Startup
     {

@@ -15,5 +15,13 @@ namespace LigaPetiDbModel.DataContext.Identity
         {
             return new IdentityDb();
         }
+
+        #region PROTECTED
+        protected override void OnModelCreating(System.Data.Entity.DbModelBuilder modelBuilder)
+        {
+            modelBuilder.HasDefaultSchema("identity");
+            base.OnModelCreating(modelBuilder);
+        }
+        #endregion
     }
 }

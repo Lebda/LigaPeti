@@ -14,8 +14,8 @@ namespace LigaPetiWeb.Controllers
     [Authorize]
     public class ManageController : Controller
     {
-        private ApplicationSignInManager _signInManager;
-        private ApplicationUserManager _userManager;
+        private ApplicationSignInManager m_signInManager;
+        private ApplicationUserManager m_userManager;
 
         public ManageController()
         {
@@ -31,11 +31,11 @@ namespace LigaPetiWeb.Controllers
         {
             get
             {
-                return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
+                return m_signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
             private set 
             { 
-                _signInManager = value; 
+                m_signInManager = value; 
             }
         }
 
@@ -43,11 +43,11 @@ namespace LigaPetiWeb.Controllers
         {
             get
             {
-                return _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
+                return m_userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
             }
             private set
             {
-                _userManager = value;
+                m_userManager = value;
             }
         }
 
@@ -323,10 +323,10 @@ namespace LigaPetiWeb.Controllers
 
         protected override void Dispose(bool disposing)
         {
-            if (disposing && _userManager != null)
+            if (disposing && m_userManager != null)
             {
-                _userManager.Dispose();
-                _userManager = null;
+                m_userManager.Dispose();
+                m_userManager = null;
             }
 
             base.Dispose(disposing);

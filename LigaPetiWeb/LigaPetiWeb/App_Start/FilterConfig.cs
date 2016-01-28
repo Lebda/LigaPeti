@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace LigaPetiWeb
+namespace LigaPetiWeb.App_Start
 {
     public class FilterConfig
     {
